@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro consulta médica</h1>
+    <form action="recebe.php" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nome do paciente:</td>
+                    <td><input type="text" name="nome" size="25" required></td>
+                </tr>
+                <tr>
+                    <td>Data da consulta:</td>
+                    <td><input type="date" name="data" required></td>
+                </tr>
+                <tr>
+                    <td>Médico da consulta:</td>
+                    <td><input type="text" name="med" size="25" required></td>
+                </tr>
+                <tr>
+                    <td>Especialidade médica:</td>
+                    <td>
+                        <input type="text" list="especialidade" size="14" name="espe" required>
+                        <datalist id="especialidade">
+                            <option value="Angiologia"></option>
+                            <option value="Cardiologia"></option>
+                            <option value="Cirurgia Plástica"></option>
+                            <option value="Dermatologia"></option>
+                            <option value="Genética Médica"></option>
+                            <option value="Gerontologia"></option>
+                            <option value="Gestão Hospitalar"></option>
+                            <option value="Infectologia"></option>
+                            <option value="Oncologia"></option>
+                            <option value="Ortopedia"></option>
+                            <option value="Pediatria"></option>
+                            <option value="Pneumologia"></option>
+                            <option value="Psiquiatria"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Enviar" name="envia">
+                        <input type="reset" value="Cancelar" name="Cancela">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
