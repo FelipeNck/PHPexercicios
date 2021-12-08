@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro do animal</h1>
+    <form action="recebe.php" method="get">
+        <table>
+            <tr>
+                <td>Dono do animal:</td>
+                <td><input type="text" name="dono" required></td>
+            </tr>
+            <tr>
+                <td>Telefone de contato:</td>
+                <td><input type="tel" name="tele" required></td>
+            </tr>
+            <tr>
+                <td>Nome do animal:</td>
+                <td><input type="text" name="nome" required></td>
+            </tr>
+            <tr>
+                <td>Espécie do animal:</td>
+                <td>
+                    <select name="espe">
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Tartaruga">Tartaruga</option>
+                        <option value="Pássaro">Pássaro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Data da consulta:</td>
+                <td><input type="date" name="data"></td>
+            </tr>
+            <tr>
+                <td>Tipo de procedimento:</td>
+                <td>
+                    <select name="proce">
+                        <option value="Banho">Banho</option>
+                        <option value="Tosa">Tosa</option>
+                        <option value="Vacinaçao">Vacinação</option>
+                        <option value="Vermifugaçao">Vermifugação</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tamanho do animal:</td>
+                <td>
+                    <input type="radio" id="p" name="tama" value="Pequeno">
+                    <label for="p">Pequeno</label>
+                    <input type="radio" id="m" name="tama" value="Médio">
+                    <label for="m">Médio</label>
+                    <input type="radio" id="g" name="tama" value="Grande">
+                    <label for="g">Grande</label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Enviar" name="envia">
+        <input type="reset" value="Cancelar" name="Cancela">
+    </form>
+</body>
+</html>

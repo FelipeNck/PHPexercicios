@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500;900&family=Irish+Grover&family=Rampart+One&family=Roboto:wght@300&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro DEV</h1>
+    <p class="sub-title">Preencha os campos</p>
+
+    <form action="recebe.php" method="post">
+        <p class="name">
+            Nome <br>
+            <input type="text" name="nome">
+        </p>
+        <p class="name">
+            Sobrenome <br>
+            <input type="text" name="sobre">
+        </p>
+        <p>
+            Email <br>
+            <input type="text" name="email">
+        </p>
+        <p>
+            Você é: <br>
+            <input type="radio" name="apli" id="front" value="Front-end">
+            <label for="front">Front-end</label><br>
+            <input type="radio" name="apli" id="back" value="Back-end">
+            <label for="back">Back-end</label><br>
+            <input type="radio" name="apli" id="full" value="Fullstack">
+            <label for="full">Fullstack</label>
+        </p>
+        <p>
+            Senioridade 
+            <select name="senio">
+                <option value="Não informado">Selecione</option>
+                <option value="Junior">Junior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </p>
+        <p>
+            <input class="button" type="submit" value="Enviar" name="envia">
+            <input class="button" type="reset" value="Cancelar" name="Cancela">
+        </p>
+    </form>
+</body>
+</html>
